@@ -1,0 +1,55 @@
+Concepts learnt:
+
+JSX: Java Script XML
+This is the type of file, we use to make react components.
+It extends react components and return it that can be reused at multiple places.
+
+
+Rendering Lists:
+We need to map the values to the jsx script. It maybe the state values and we use 
+this.state.property_name for it.
+
+
+Conditional Rendering:
+This is rendering based on some conditions and can be done using functions
+
+
+Handling Events: 
+Event Handling are the events like onClick, onChange, etc. and again can be handled using functions.
+Also, the parameters passing is to be done properly between different hierarchy or react
+components using this.Props
+
+
+Updating the state:
+States is always local to the file and shouldn't be updated outside of it.
+States should not be updated directly as it can lead to sever untraceable bugs. So, we should use
+this.setState() function and [...variable] i.e. spread operator.
+
+
+Props - Pass Data:
+It is used to pass data from parents to children react components. 
+To pass variable directly, we can declare it in jsx script for the component. There is also a
+children property for props and can be used using this.props.children
+
+
+Raising and Handling Events:
+Events can be raised from children and handled in parents or wherever the states are defined.
+
+
+Lifting the state - Multiple components in sync
+In case states are to be accessed on same level where they are not accessible, then states and
+their function handling are moved above or lifted to parents till wherever it is required, comes
+under the files where the states are lifted.
+
+
+Functional Components:
+These are the individual react components with some functional meaning. In case there are no states,
+functions and very simple component, then it is called Stateless functional component.
+
+
+Lifecycle Hooks:
+These are the phases that programs goes through at certain points during the lifecycle of a program.
+Main phases and their functions are:
+MOUNT: constuctor, render, componentDidMount
+UPDATE: render, componentDidUpdate
+UNMOUNT: componentWillUnmount
